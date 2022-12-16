@@ -8,8 +8,13 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./../css/styles.css"
+      href="../css/styles.css"
       media="screen"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/logos/microchip-solid.svg"
     />
   </head>
 
@@ -17,17 +22,17 @@
     <header>
       <nav>
         <div class="container">
-          <a href="./../index.html" title="Home page">
+          <a href="../index.html" title="Home page">
             <img
-              src="./../images/logos/logoMenu.svg"
+              src="../images/logos/logoMenu.svg"
               class="nav-logo"
               alt="Logo"
             />
           </a>
           <ul>
-            <li><a href="./../presentation.html">Presentación</a></li>
-            <li><a href="./../categories.html">Categorías</a></li>
-            <li><a href="./../links.html">Enlaces</a></li>
+            <li><a href="../presentation.html">Presentación</a></li>
+            <li><a href="../categories.html">Categorías</a></li>
+            <li><a href="../links.html">Enlaces</a></li>
           </ul>
         </div>
       </nav>
@@ -70,16 +75,23 @@
             formando un pequeño equipo dedicado a la realización de programas
             que vendían a empresas o administraciones públicas.
           </p>
+          <picture>
+            <source
+              media="(max-width: 576px)"
+              srcset="../images/characters/gates-small.jpg"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 576px)"
+              srcset="../images/characters/gates.jpg"
+              type="image/jpg"
+            />
 
-          <img
-            srcset="
-              .././images/characters/gates-small.jpg 576w,
-              .././images/characters/gates.jpg       768w
-            "
-            sizes="(max-width: 576px) 500px, 1000px"
-            src=".././images/characters/gates-small.jpg"
-            alt="Imagen Bill Gates"
-          />
+            <img
+              src="../images/characters/gates-small.jpg"
+              alt="Imagen Bill Gates"
+            />
+          </picture>
           <p>
             En 1975 se trasladaron a Alburquerque (Nuevo México) para trabajar
             suministrando a la compañía MITS una serie de programas susceptibles
@@ -110,16 +122,15 @@
 
           <img
             srcset="
-              .././images/characters/gates_ted-mobile.jpg   576w,
-              .././images/characters/gates_ted-tablet.jpg   768w,
-              .././images/characters/gates_ted-desktop.jpg 1200w
+              ../images/characters/gates_ted-mobile.jpg   400w,
+              ../images/characters/gates_ted-tablet.jpg   740w,
+              ../images/characters/gates_ted-desktop.jpg 1000w
             "
-            sizes="(max-width: 576px) 90vw,
-            (max-width: 768px) 90vw,
-            (min-width: 1200px) 85vw"
-            src=".././images/characters/gates_ted-mobile.jpg"
+            sizes="(max-width: 576px) 100vw, 80vw"
+            src="../images/characters/gates_ted-mobile.jpg"
             alt="Imagen Bill Gates charla TED"
           />
+
           <p>
             Y así fue al principio: una competición entre fabricantes de
             ordenadores no demasiado honesta, pues hubo más de un plagio. A
@@ -239,36 +250,36 @@
           <picture>
             <source
               media="(max-width: 576px)"
-              srcset=".././images/characters/microsoft-mobile.webp"
+              srcset="../images/characters/microsoft-mobile.webp"
               type="image/webp"
             />
             <source
               media="(max-width: 1200px)"
-              srcset=".././images/characters/microsoft-tablet.webp"
+              srcset="../images/characters/microsoft-tablet.webp"
               type="image/webp"
             />
             <source
               media="(min-width: 1200px)"
-              srcset=".././images/characters/microsoft.webp"
+              srcset="../images/characters/microsoft.webp"
               type="image/webp"
             />
             <source
               media="(max-width: 576px)"
-              srcset=".././images/characters/microsoft-mobile.jpg"
+              srcset="../images/characters/microsoft-mobile.jpg"
               type="image/jpg"
             />
             <source
               media="(max-width: 1200px)"
-              srcset=".././images/characters/microsoft-tablet.jpg"
+              srcset="../images/characters/microsoft-tablet.jpg"
               type="image/jpg"
             />
             <source
               media="(min-width: 1200px)"
-              srcset=".././images/characters/microsoft.jpg"
+              srcset="../images/characters/microsoft.jpg"
               type="image/jpg"
             />
             <img
-              src=".././images/characters/microsoft-mobile.webp"
+              src="../images/characters/microsoft-mobile.webp"
               alt="Imagen Microsoft"
             />
           </picture>
@@ -316,7 +327,7 @@
           </div>
 
           <div class="referencia">
-            <a href="./../links.html">
+            <a href="../links.html">
               La información se ha extraído de otras web. Para más información
               pulse aquí.
             </a>
@@ -326,22 +337,48 @@
             <h3>También te puede interesar:</h3>
             <div class="character-related-items">
               <div class="charater-related-item">
-                <a href="./stallman.html">
-                  <img
-                    src="./../images/characters/stallman.jpg"
-                    class="character-img"
-                    alt="Imagen Richard Stallman"
-                  />
+                <a href="stallman.html">
+                  <picture>
+                    <source
+                      media="(max-width: 576px)"
+                      srcset="../images/characters/stallman-small.jpg"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="../images/characters/stallman.jpg"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="../images/characters/stallman-small.jpg"
+                      class="character-img"
+                      alt="Imagen Richard Stallman"
+                    />
+                  </picture>
                   <h4 class="character-img-title">Richard Stallman</h4>
                 </a>
               </div>
               <div class="charater-related-item">
-                <a href="./jobs.html">
-                  <img
-                    src="./../images/characters/jobs.jpg"
-                    class="character-img"
-                    alt="Imagen Steve Jobs"
-                  />
+                <a href="jobs.html">
+                  <picture>
+                    <source
+                      media="(max-width: 576px)"
+                      srcset="../images/characters/jobs-small.jpg"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 576px)"
+                      srcset="../images/characters/jobs.jpg"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="../images/characters/jobs-small.jpg"
+                      class="character-img"
+                      alt="Imagen Steve Jobs"
+                    />
+                  </picture>
                   <h4 class="character-img-title">Steve Jobs</h4>
                 </a>
               </div>
@@ -355,12 +392,26 @@
     </main>
     <footer>
       <div class="container">
-        <div class="footer-container">
-          <p>Herramientas HTML y CSS aula 1</p>
+        <div class="footer-menu">
+          <img
+            src="../images/logos/logoFooter.svg"
+            class="nav-logo"
+            alt="Logo"
+          />
+
+          <ul class="footer-menu__nav">
+            <li><a href="../presentation.html">Presentación</a></li>
+            <li><a href="../categories.html">Categorías</a></li>
+            <li><a href="../links.html">Enlaces</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footer-author">
+          <p>Herramientas HTML y CSS</p>
           <p>2022 &copy; Francisco Javier Pérez Arribas</p>
         </div>
       </div>
     </footer>
   </body>
-  <script src="./../js/script.js"></script>
+  <script src="../js/script.js"></script>
 </html>

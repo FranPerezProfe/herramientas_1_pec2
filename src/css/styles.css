@@ -660,7 +660,7 @@ main {
 }
 
 #character .character-img {
-    width: 40%;
+    width: 80%;
     height: auto;
     border-radius: 5px;
 }
