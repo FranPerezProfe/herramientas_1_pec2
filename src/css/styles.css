@@ -637,10 +637,17 @@ main {
     align-items: end;
 }
 
-#character .charater-related h3 {
+#character .charater-related h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 50px;
+    font-size: 1.17em;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+
+#character .charater-related h3 {
+    font-size: 1.1rem;
 }
 
 #character .character-related-items {
@@ -696,12 +703,14 @@ main {
     margin-bottom: 10px;
 }
 
-#enlaces .link-item h4 {
+#enlaces .link-item h2 {
     font-size: 1.5rem;
     margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: 0;
 }
 
-#enlaces .link-item h5 {
+#enlaces .link-item h3 {
     font-size: 1.3rem;
     margin-top: 10px;
     margin-bottom: 10px;
