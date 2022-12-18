@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>PEC1 - Herramientas HTML y CSS aula 1</title>
-    <meta name="description" content="Desarrollo de la PEC1" />
+    <title>PEC2 - Herramientas HTML y CSS</title>
+    <meta name="description" content="Desarrollo de la PEC2" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="./../css/styles.css"
+      href="../css/styles.css"
       media="screen"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/logos/laptop-solid.svg"
     />
   </head>
 
@@ -17,17 +22,17 @@
     <header>
       <nav>
         <div class="container">
-          <a href="./../index.html" title="Home page">
+          <a href="../index.html" title="Home page">
             <img
-              src="./../images/logos/logoMenu.svg"
+              src="../images/logos/logoMenu.svg"
               class="nav-logo"
               alt="Logo"
             />
           </a>
           <ul>
-            <li><a href="./../presentation.html">Presentación</a></li>
-            <li><a href="./../categories.html">Categorías</a></li>
-            <li><a href="./../links.html">Enlaces</a></li>
+            <li><a href="../presentation.html">Presentación</a></li>
+            <li><a href="../categories.html">Categorías</a></li>
+            <li><a href="../links.html">Enlaces</a></li>
           </ul>
         </div>
       </nav>
@@ -58,6 +63,23 @@
             de la mujer siempre fue minoritario o desconocido para el resto,
             como es el caso de la historia de este grupo de mujeres.
           </p>
+          <picture>
+            <source
+              media="(max-width: 576px)"
+              srcset="../images/characters/rosies-small.jpg"
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 576px)"
+              srcset="../images/characters/rosies.jpg"
+              type="image/jpg"
+            />
+
+            <img
+              src="../images/characters/rosies-small.jpg"
+              alt="Imagen Top Secret Rosies"
+            />
+          </picture>
           <p>
             Después del ataque sorpresa a la base militar estadounidense de
             Pearl Harbor, el ejército empezó a reclutar mujeres a sus filas,
@@ -121,7 +143,7 @@
           </div>
 
           <div class="referencia">
-            <a href="./../links.html">
+            <a href="../links.html">
               La información se ha extraído de otras web. Para más información
               pulse aquí.
             </a>
@@ -130,12 +152,25 @@
             <h3>También te puede interesar:</h3>
             <div class="character-related-items">
               <div class="charater-related-item">
-                <a href="./ritchie.html">
-                  <img
-                    src="./../images/characters/ritchie.jpg"
-                    class="character-img"
-                    alt="Imagen Dennis Ritchie"
-                  />
+                <a href="ritchie.html">
+                  <picture>
+                    <source
+                      media="(max-width: 1200px)"
+                      srcset="../images/characters/ritchie-small.jpg"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="../images/characters/ritchie.jpg"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="../images/characters/ritchie-small.jpg"
+                      class="character-img"
+                      alt="Imagen Dennis Ritchie"
+                    />
+                  </picture>
                   <h4 class="character-img-title">Dennis Ritchie</h4>
                 </a>
               </div>
@@ -149,12 +184,26 @@
     </main>
     <footer>
       <div class="container">
-        <div class="footer-container">
-          <p>Herramientas HTML y CSS aula 1</p>
+        <div class="footer-menu">
+          <img
+            src="../images/logos/logoFooter.svg"
+            class="nav-logo"
+            alt="Logo"
+          />
+
+          <ul class="footer-menu__nav">
+            <li><a href="../presentation.html">Presentación</a></li>
+            <li><a href="../categories.html">Categorías</a></li>
+            <li><a href="../links.html">Enlaces</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footer-author">
+          <p>Herramientas HTML y CSS</p>
           <p>2022 &copy; Francisco Javier Pérez Arribas</p>
         </div>
       </div>
     </footer>
   </body>
-  <script src="./../js/script.js"></script>
+  <script src="../js/script.js"></script>
 </html>
